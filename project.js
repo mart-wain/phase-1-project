@@ -1,11 +1,3 @@
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Key': '8da72ea60dmsh4c8ff6c02794fb3p10ab6cjsn165735df46b6',
-// 		'X-RapidAPI-Host': 'amazon24.p.rapidapi.com'
-// 	}
-// };
-
 
 fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
 	.then(response => response.json())
