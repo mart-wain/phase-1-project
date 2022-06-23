@@ -22,8 +22,19 @@ fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
 
             const h4 = document.createElement('h4');
             h4.innerHTML = product.name;
+
+            const price = document.createElement('price');
+            price.classList.add("price")
+            price.innerHTML = product.name;
+
+            const button=document.createElement('button')
+            button.classList.add('btn-buy')
+            button.innerHTML='add to cart'
+            
             productBox.appendChild(image);
             productBox.appendChild(h4);
+            //productBox.append(price);
+            productBox.append(button);
            
             
 
