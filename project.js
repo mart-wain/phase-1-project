@@ -5,7 +5,6 @@ fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
         console.log(response);
         display(response)
     })
-	//.catch(err => console.error(err));
            
 
     function display(products)
