@@ -30,6 +30,7 @@ body {
     max-width: 1068px;
     margin: auto;
     width: 100%;
+    background: rgb(71, 105, 71);
  }
  section{
     padding: 4rem 0 3rem;
