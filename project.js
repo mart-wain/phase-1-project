@@ -24,8 +24,7 @@ fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
             h4.innerHTML = product.name;
 
             const price = document.createElement('price');
-            price.classList.add("price")
-            price.innerHTML = product.name;
+            price.innerHTML = product.price;
 
             const button=document.createElement('button')
             button.classList.add('btn-buy')
@@ -33,7 +32,7 @@ fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
             
             productBox.appendChild(image);
             productBox.appendChild(h4);
-            //productBox.append(price);
+            productBox.append(price);
             productBox.append(button);
            
             
