@@ -2,7 +2,7 @@
 Themshop
 An online store that sells beauty products.
 #by Martin Wainaina
-###Table of Content
+##Table of Content
 -[Description](#description)
 -[Features](#features)
 -[Requirements](#requirements)
