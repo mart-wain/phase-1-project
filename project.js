@@ -76,10 +76,6 @@ function addItemToCart(h4, price, img) {
         shopContent.append(productBox)
           });
 
-       // let prod = document.getElementById('myList1');
-        //let newElement = document.createElement('p')
-        //newElement.innerHTML=data;
-        //prod.appendChild(newElement);
     }
        
 
