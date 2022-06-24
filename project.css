@@ -46,6 +46,19 @@ body {
                   and its descendants or flex items.
                 Overlapping elements with a larger z-index cover those with a smaller one*/
  }
+ .navbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ nav ul{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-right: 200px;
+ }
+
+ }
  .nav{
     display: flex;
     align-items: center;
