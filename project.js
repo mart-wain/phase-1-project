@@ -22,8 +22,8 @@ fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
             h4.innerHTML = product.name;
 
             const ksh = document.createElement('ksh')
-            ksh.innerHTML = product.price_sign;
             ksh.classList.add('price_sign')
+            ksh.innerHTML = product.price_sign;
 
             const price = document.createElement('price');
             price.innerHTML = product.price;
@@ -37,10 +37,43 @@ fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
             productBox.append(ksh);
             productBox.append(price);
             productBox.append(button);
-           
-            
 
-            shopContent.append(productBox)
+            let addBtns = document.getElementsByClassName("btn-buy");
+for (let i = 0; i < addBtns.length; i++) {
+  const btn = addBtns[i];
+  btn.addEventListener("click", addToCart);
+}
+
+function addToCart(e) {
+  const button = e.target;
+  button.innerText = "In Cart";
+  button.disabled = true;
+  const title = button.parentElement.nextElementSibling.textContent;
+  const price =
+    button.parentElement.nextElementSibling.nextElementSibling.children[0]
+      .textContent;
+  const img = button.parentElement.children[0].src;
+  addItemToCart(h4, price, img);
+}
+
+function addItemToCart(h4, price, img) {
+  const newRow = document.createElement("div");
+  newRow.classList.add("cart-item");
+  newRow.innerHTML = `
+  <img src="${img}" alt="product" srcset="" />
+  <div>
+  <h4>${h4}</h4>
+  <h5>${price}</h5>
+  <span class="remove-item">Remove</span>
+  </div>
+  <div>
+  <i class="fas fa-chevron-up"></i>
+  <p class="item-amount">1</p>
+  <i class="fas fa-chevron-down"></i>
+  </div>`;
+  cartContent.append(newRow);
+}
+        shopContent.append(productBox)
           });
 
        // let prod = document.getElementById('myList1');
@@ -51,4 +84,4 @@ fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline')
        
 
       
- 
+  

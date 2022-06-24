@@ -54,10 +54,13 @@ body {
  nav ul{
    display: flex;
    justify-content: space-between;
-   align-items: center;
+   align-items: right;
    margin-right: 200px;
  }
-
+nav ul li {
+   margin-left: 50px;
+   color: black;
+   align-items: flex-start;
  }
  .nav{
     display: flex;
