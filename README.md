@@ -31,6 +31,9 @@ Be registered user and 18+ yrs and above for you to purchase online.
    Unzip the downlaoded file to the file you want them
    open the index file with the zipped file with any browser
 
+##LIVE LINK
+    [themshop](https://mart-wain.github.io/phase-1-project)
+
 ##Languages used
 HTML - structuring of the pages
 CSS -Used to style the  pages
