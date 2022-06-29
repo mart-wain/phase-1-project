@@ -1,7 +1,7 @@
-# phase-1-project
+#phase-1-project
 Themshop
 An online store that sells beauty products.
-#by Martin Wainaina
+##by Martin Wainaina
 ##Table of Content
 -[Description](#description)
 -[Features](#features)
