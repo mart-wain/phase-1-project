@@ -55,7 +55,7 @@ function addToCart(e) {
   const img = button.parentElement.children[0].src;
   addItemToCart(h4, price, img);
 }
-
+//adding a cart button event
 function addItemToCart(h4, price, img) {
   const newRow = document.createElement("div");
   newRow.classList.add("cart-item");
